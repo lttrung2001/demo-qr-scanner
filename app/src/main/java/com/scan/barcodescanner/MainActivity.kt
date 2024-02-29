@@ -5,7 +5,6 @@ import android.content.pm.PackageManager
 import android.graphics.Rect
 import android.os.Bundle
 import android.util.Log
-import android.util.Size
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.Camera
@@ -127,8 +126,8 @@ class MainActivity : AppCompatActivity() {
                 processImageProxy(scanner, imageProxy)
             }
 
-      // configure to use the back camera
-      val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
+            // configure to use the back camera
+            val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
             try {
                 camera = cameraProvider.bindToLifecycle(
